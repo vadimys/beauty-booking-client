@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+h2.break-heading {
+  text-align: center;
+  position: relative;
+  margin: 16px 0;
+}
+
+h2.break-heading span {
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #121212;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+h2.break-heading::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #d8d8d8;
+  position: absolute;
+  top: 50%;
+  height: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.form-container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 100%;
+}
+
+.form-row {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  grid-gap: 16px;
+  align-items: start;
+}
+
+.sign-in-with-container {
+  align-self: start;
+}
+
+.form-col {
+  margin: 0;
+}
+
+.divider {
+  background-color: lightgray;
+  width: 1px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    max-width: 400px;
+  }
+
+  .form-row {
+    padding: 24px;
+    grid-gap: 24px;
+  }
+
+  .form-col {
+    margin: 0;
+  }
+}
